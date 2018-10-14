@@ -1,0 +1,12 @@
+#Simple code for testing parser
+import sys
+
+def max(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+for line in sys.stdin:
+    print(sum(map(int, line.split())))
+    print(max(12, 14))
