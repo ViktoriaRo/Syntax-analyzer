@@ -174,3 +174,13 @@ encoding_decl: NAME
 yield_expr: 'yield' [yield_arg]
 yield_arg: 'from' test | testlist
 ```
+
+##Dependencies
+
+1. Download `antlr-4.7.1-complete.jar`
+2. or `sudo pip3 install antlr4-python3-runtime`
+
+##Running and testing
+
+* run - `python main.py`
+* test -`python test.py`
