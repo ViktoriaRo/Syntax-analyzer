@@ -17,10 +17,10 @@
 
 ## Assignment data
 **Homework:** HA-3
-**Variant:** (language)
-**Language of implementation:** (language)
-**Authors:** (names & surnames)
-**Reviewers:** (names & surnames)
+**Variant:** python
+**Language of implementation:** python
+**Authors:** Dmitry Turenko & Amir Nazyrov
+**Reviewers:** Victoria Rotaru & Elizaveta Batanina
 
 ## Overall evaluation
 
@@ -31,7 +31,9 @@ Give example of the input for which the work outputs the right answers
 
 ### General characteristics
 * How fast it works
+It works fast enough. No problems at this step.
 * How easy was it to launch the program
+In the README.md I found explicit steps of installation dependences and lounching program.  
 * How easy it was to read and understand the code
 * Any other comments of general nature, with examples as needed
 
