@@ -64,12 +64,11 @@ In the README.md I didn't find explicit steps of installation dependences and la
 search in internet how to install dependecies and libraries that I needed for launching this project.  
 * How easy it was to read and understand the code
 
-Code has comments and explicit names for variables, therefore it was not difficult to read.
-
+Code has comments and explicit names for variables, therefore it wasn't difficult to read.
 
 ## Found errors
 
-### Error #1 (test not passes)
+### Error #1 (test does not pass)
 
 #### Kind of error: PROGRAM CRASHES
 The test didn't pass. The `testJSON` and `realJSON` has one difference.
@@ -104,5 +103,3 @@ testJSON = testJSON.replaceAll("\\r", "");
 The solution is to add 2 more slashes, 2 for the compiler and 2 for the regex engine.
 ```
 testJSON = testJSON.replaceAll("\\\\r", "");
-```
-
