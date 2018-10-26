@@ -60,7 +60,8 @@ for i in range(10):
 It works fast enough. No problems at this step.
 * How easy was it to launch the program
 
-In the README.md I found explicit steps of installation dependences and launching program.  
+In the README.md I didn't find explicit steps of installation dependences and launching program, therefore i should've 
+search in internet how to install dependecies and libraries that I needed for launching this project.  
 * How easy it was to read and understand the code
 
 Code has comments and explicit names for variables, therefore it was not difficult to read.
