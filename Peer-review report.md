@@ -17,9 +17,13 @@
 
 ## Assignment data
 **Homework:** HA-3
+
 **Variant:** python
+
 **Language of implementation:** python
+
 **Authors:** Dmitry Turenko & Amir Nazyrov
+
 **Reviewers:** Victoria Rotaru & Elizaveta Batanina
 
 ## Overall evaluation
@@ -35,15 +39,19 @@ while x <= 0:
 
 ### General characteristics
 * How fast it works:
+
 It works fast enough. No problems at this step.
 * How easy was it to launch the program:
-In the README.md I found explicit steps of installation dependences and lounching program.  Program also conatins requirements.txt that makes it easy to set requirements
+
+In the `README.md` I found explicit steps of installation dependences and launching program.  Program also conatins requirements.txt that makes it easy to set requirements
 * How easy it was to read and understand the code:
+
 Code contains docstrings which describe function behavior -> it is esy to understand code. 
 * Any other comments of general nature, with examples as needed:
+
 Tests doesn't cover all functionality that was mentioned in task. Better add tests that demonstrate that all language constructs are parsed well
 
-##Error #1(wrong output value) 
+## Error #1(wrong output value) 
 If you try to test program on following code:
 ```angular2html
 from time import time
