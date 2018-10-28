@@ -26,39 +26,91 @@
 
 ### Correct parts
 ```
-Give example of the input for which the work outputs the right answers
+x = 0
+
+while x <= 0:
+     print(x)
+
 ```
 
 ### General characteristics
-* How fast it works
+* How fast it works:
 It works fast enough. No problems at this step.
-* How easy was it to launch the program
-In the README.md I found explicit steps of installation dependences and lounching program.  
-* How easy it was to read and understand the code
-* Any other comments of general nature, with examples as needed
+* How easy was it to launch the program:
+In the README.md I found explicit steps of installation dependences and lounching program.  Program also conatins requirements.txt that makes it easy to set requirements
+* How easy it was to read and understand the code:
+Code contains docstrings which describe function behavior -> it is esy to understand code. 
+* Any other comments of general nature, with examples as needed:
+Tests doesn't cover all functionality that was mentioned in task. Better add tests that demonstrate that all language constructs are parsed well
 
-## Found errors
+##Error #1(wrong output value) 
+If you try to test program on following code:
+```angular2html
+from time import time
 
-### Error short description (add as many entries as you need)
+def donno_how_to_call():
+    x = [1, 2, 4, 21213, 42]
+    for i, _x in enumerate(x):
+        print(_x * x[i+1 if i != len(x)-1 else 0])
 
-#### Kind of error: WRONG OUTPUT | PROGRAM CRASHES | PROGRAM HANGS | PERFORMANCE PROBLEM
-Describe in more detail what happens. Add examples.
+```
+The output will contain wrong values for token:
+```angular2html
+                                  {
+                                    "Type": "NEWLINE",
+                                    "Value": ")"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "Type": "DEDENT",
+                              "Value": ")"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "Type": "DEDENT",
+                  "Value": ")"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Type": "DEDENT",
+      "Value": "e 0])"
+    }
+  ]
+}
+```
 
-#### How was it found? 
-Describe.
+###Kind of error: WRONG OUTPUT
 
-#### How to reproduce
-List steps to reproduce the problem. Show the problematic input if needed. Add screenshots if it helps.
+### How was it found:
+Just placing code mentioned earlier in in.txt
 
-#### Expected behaviour
-How would the program behave if there was no error?
+### How to reproduce:
+Place code in in.txt and run launcher.py (you may also exclude running lines 110 and 111 in launcher.py)
 
-#### Actual behavour
-How what happens is different from would should happen?
+### Expected behaviour:
+Output should contain right values of tokens:
+```angular2html
+"Type": "NEWLINE",
+"Value": "\n" # as stated in Python3.g4 that NEWLINE is actually '\n' char
 
-#### Location of the problem
-Show the code snippet where the origin of the problem is located. Explain how exactly it is wrong.
-
-#### Solution to the problem
-Show what changes should be made to fix the problem.
-
+```
+```angular2html
+ {
+      "Type": "DEDENT",
+      "Value": "<EOF>"
+    }
+```
+### Actual behaviour:
+Wrong output. See description of an error
