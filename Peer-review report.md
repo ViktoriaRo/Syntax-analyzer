@@ -99,7 +99,7 @@ The output will contain wrong values for token:
 }
 ```
 
-###Kind of error: WRONG OUTPUT
+### Kind of error: WRONG OUTPUT
 
 ### How was it found:
 Just placing code mentioned earlier in in.txt
